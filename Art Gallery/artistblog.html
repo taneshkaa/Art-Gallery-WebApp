@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Artist Blog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		input[type=text], select, textarea {
+			width: 80%;
+			padding: 15px;
+			border: 2px solid rgb(70,65,65)
+			border-radius: 5px;
+			resize: vertical;
+		}
+		input[type=file], select, textarea {
+			width: 80%;
+			padding: 15px;
+			border: 2px solid rgb(70,65,65)
+			border-radius: 5px;
+			resize: vertical;
+		}
+		label {
+			padding: 15px 15px 15px 0;
+			display: inline-block;
+		}
+		input[type=submit] {
+			background-color: rgb(35,115,160);
+			color: white;
+			padding: 15px 20px;
+			border: none;
+			cursor: pointer;
+			float: left;
+		}
+		input[type=submit]: hover {
+			background-color: #45a049;
+		}
+		input[type=reset] {
+			background-color: rgb(35,115,160);
+			color: white;
+			padding: 15px 20px;
+			border: none;
+			cursor: pointer;
+			float: left;
+		}
+		input[type=reset]: hover {
+			background-color: #45a049;
+		}
+		.container {
+			border-radius: 5px;
+			padding: 20px;
+		}
+		.col-25 {
+			float: left;
+			width: 25%;
+			margin-top: 5px;
+		}
+		.col-75 {
+			float: left;
+			width: 75%;
+			margin-top: 5px;	
+		}
+		/*clear floats after the columns*/
+		.row:after {
+			content: " ";
+			display: table;
+			clear: both;
+		}
+		.footer{margin: -8px; clear:both; background-image:linear- gradient(145deg,#7379ff,#b524ef); color: white; text-align:left; padding:10px;}
+		/* screen styling is done on the basis of screen atrea available (if less than 600px[wide], divide the columns; (stack up the columns one after the another*/
+	</style>
+	<h2>Artist's Blog!</h2>
+	<p>If you wish to join our organization and showcase your art and talent to the country, submit your blog and get a platform to exhibit your work.</p>
+</head>
+<body>
+	<form id="blog" action="artistblog.php" method="POST">
+		<div class="row">
+				<div class="col-25">
+					<label for="Name"> Name </label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="Name" name="Name", placeholder="Enter your Full Name", required="required">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="ContactNo"> ContactNo </label>
+				</div>
+				<div class="col-75">
+					<input type="number" id="ContactNo" name="ContactNo", placeholder="Enter your Contact Details", required="required">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for=File> File </label>
+				</div>
+				<div class="col-75">
+					<input type="file" id="File" name="File">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for=AdditionalComments> AdditionalComments </label>
+				</div>
+				<div class="col-75">
+					<p>If you wish to book a slot for your Own Exhibitions. Let Us Know your Requirements.</p>
+					<textarea id="subject" name="subject", style="height: 200px;"> </textarea>
+				</div>
+			</div>
+				<br>
+				<br>
+				<td><input type="submit" name="Submit" value="Submit">
+				<br>
+				<br>
+				<br>					
+				<br>
+				<input type="reset" name="Reset" value="Reset">
+				</td>
+			</tr>
+		</table>
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	<a href="interface.html"> Click Here to go Back to Previous Page</a>
+	<div class="footer">
+		<div style="color: navy" class="panel-footer" text="right">
+			<small>&copy; BBCorp.</small>
+		</div>
+	</div>
+</body>
+</html>
+
+
+	
+
+
+	
+
+	
